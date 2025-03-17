@@ -1,0 +1,31 @@
+/* Estilos para fondo de pantalla */
+body {
+    background-image: url("../Recursos/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para ordenar el contenido del html (Nav - section - footer) */
+#contenido {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Estilos para el contenedor del formulario */
+#Modulos-Carta {
+    display: flex; /* Alinear / Organizar los elementos*/
+    justify-content: center;  /* Centrado de los elementos*/
+    align-items: center;  /* Centrado de los elementos*/
+    margin-top: 50px; /* Alejar el DIV del subtitulo*/
+}
+
+/* Estilos para la imagen de lista estudiantes */
+#img_listaEstudiantes {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}

@@ -1,0 +1,6 @@
+/* Estilos para ordenar el contenido del html (Nav - section - footer) */
+#contenido {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}

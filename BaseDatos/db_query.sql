@@ -1,7 +1,7 @@
 -- Prueba Tecnica - Harlyn Luna Brenes
 
 -- Elimnar base de datos si existe
--- DROP DATABASE IF EXISTS ColegioBD;
+DROP DATABASE IF EXISTS ColegioBD;
 
 -- Creación de la base de datos ColegioDB
 CREATE DATABASE ColegioBD;
@@ -33,19 +33,6 @@ CREATE TABLE ColegioBD.ESTUDIANTE_CURSO(
 INSERT INTO ColegioBD.ESTUDIANTE (NombreEstudiante, CorreoEstudiante, FechaCreacion) VALUES ('Harlyn','hluna@edu.co.cr', NOW());
 INSERT INTO ColegioBD.ESTUDIANTE (NombreEstudiante, CorreoEstudiante, FechaCreacion) VALUES ('Luis','lsolis@edu.co.cr', NOW());
 INSERT INTO ColegioBD.ESTUDIANTE (NombreEstudiante, CorreoEstudiante, FechaCreacion) VALUES ('Maria','mrodriguez@edu.co.cr', NOW());
-
--- Insertar Datos Tabla Cursos
-INSERT INTO ColegioBD.CURSOS (NombreCurso) VALUES ('Matematicas');
-INSERT INTO ColegioBD.CURSOS (NombreCurso) VALUES ('Español');
-INSERT INTO ColegioBD.CURSOS (NombreCurso) VALUES ('Ciencias');
-INSERT INTO ColegioBD.CURSOS (NombreCurso) VALUES ('Estudios Sociales');
-
--- Insertar Datos Tabla Estudiantes_Cursos
-INSERT INTO ColegioBD.ESTUDIANTE_CURSO (IdEstudiante, IdCurso) VALUES (1, 1);
-INSERT INTO ColegioBD.ESTUDIANTE_CURSO (IdEstudiante, IdCurso) VALUES (1, 3);
-INSERT INTO ColegioBD.ESTUDIANTE_CURSO (IdEstudiante, IdCurso) VALUES (2, 2);
-INSERT INTO ColegioBD.ESTUDIANTE_CURSO (IdEstudiante, IdCurso) VALUES (3, 4);
-INSERT INTO ColegioBD.ESTUDIANTE_CURSO (IdEstudiante, IdCurso) VALUES (3, 1);
 
 -- Procedimientos almacenados 
 
@@ -93,7 +80,7 @@ BEGIN
 END $$
 DELIMITER ;
 
--- Procedimiento para agregar nuevo Estudiante
+-- Procedimiento para agregar nuevo estudiante
 DELIMITER $$
 CREATE PROCEDURE ColegioBD.P_AgregarEstudiante(
     IN v_NombreEstudiante VARCHAR(50),

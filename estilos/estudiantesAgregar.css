@@ -1,0 +1,31 @@
+/* Estilos para ordenar el contenido del html (Nav - section - footer) */
+#contenido {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Estilos para la imagen de estudiante */
+#img_estudiante {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Estilos para el contenedor del formulario */
+#form_contenedor {
+    display: flex; /* Alinear / Organizar los elementos*/
+    justify-content: center;  /* Centrado de los elementos*/
+    align-items: center;  /* Centrado de los elementos*/
+    flex-direction: column;  /* Organizarlo en Columnas*/
+    margin-top: 50px;  /* Se coloca margen para evitar que este cerca de la imagen*/
+}
+
+/* Estilos para el botón*/
+#boton_registro {
+    width: 100%; /* Se coloca del mismo tamaño de los inputs*/
+}
